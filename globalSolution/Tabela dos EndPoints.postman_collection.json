@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "1769c234-ba0f-4600-8769-ac15a8beb45d",
+		"name": "Tabela dos EndPoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31373615"
+	},
+	"item": [
+		{
+			"name": "Adicionar paciente ao banco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Caio Arruda\",\r\n    \"cpf\": \"05758188590\",\r\n    \"genero\": \"Masculino\",\r\n    \"email\": \"caio2019@gmail.com\",\r\n    \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/pacientes"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar paciente no banco",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar informações do paciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Caio Arruda\",\r\n    \"genero\": \"Masculino\",\r\n    \"email\": \"caio2022@gmail.com\",\r\n    \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover paciente do banco",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/pacientes/05758188590"
+			},
+			"response": []
+		}
+	]
+}
